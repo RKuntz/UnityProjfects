@@ -1,0 +1,25 @@
+.buttonStyle {
+    height: 87px;
+    width: 260px;
+    opacity: 1;
+    font-size: 35px;
+    background-color: rgba(99, 231, 191, 255);
+    color: rgba(0, 26, 21, 255);
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.buttonStyle:hover {
+    height: 87px;
+    width: 260px;
+    opacity: 1;
+    font-size: 35px;
+    background-color: rgb(46, 113, 93);
+    color: rgb(157, 197, 190);
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
