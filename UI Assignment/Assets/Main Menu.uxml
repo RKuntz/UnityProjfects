@@ -1,12 +1,12 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/style.uss?fileID=7433441132597879392&amp;guid=2a77f1b8ce7efa84a90be7b0f4c1b7ff&amp;type=3#style" />
     <ui:VisualElement name="background" style="flex-grow: 1; align-items: center; opacity: 1;">
-        <ui:VisualElement name="Menu" style="height: 603px; width: 729px; align-items: center; background-color: rgb(218, 245, 255); opacity: 1; max-width: 45%; max-height: 75%; margin-top: 5%; border-top-left-radius: 25px; border-bottom-left-radius: 25px; border-top-right-radius: 25px; border-bottom-right-radius: 25px; justify-content: space-between;">
-            <ui:Label text="Destructive Desserts" display-tooltip-when-elided="true" name="Title" style="font-size: 60px; color: rgb(9, 0, 46); -unity-font-style: bold;" />
+        <ui:VisualElement name="Menu" style="height: 75%; width: 45%; align-items: center; background-color: rgb(218, 245, 255); opacity: 1; max-width: 45%; max-height: 75%; margin-top: 5%; border-top-left-radius: 25px; border-bottom-left-radius: 25px; border-top-right-radius: 25px; border-bottom-right-radius: 25px; justify-content: space-between;">
+            <ui:Label text="Destructive Desserts" display-tooltip-when-elided="true" name="Title" style="font-size: 60px; color: rgb(9, 0, 46); -unity-font-style: bold; position: relative;" />
             <ui:Label text="Main Menu" display-tooltip-when-elided="true" style="color: rgb(9, 0, 46); font-size: 36px;" />
-            <ui:Button text="Play Tutorial" display-tooltip-when-elided="true" enable-rich-text="true" class="buttonStyle" />
-            <ui:Button text="Play Main Game" display-tooltip-when-elided="true" class="buttonStyle" style="font-size: 31px; top: 10px; bottom: 10px;" />
-            <ui:Button text="Options" display-tooltip-when-elided="true" class="buttonStyle" style="position: relative; bottom: auto; top: 20px; justify-content: flex-start;" />
+            <ui:Button text="Play Tutorial" display-tooltip-when-elided="true" enable-rich-text="true" class="buttonStyle" style="flex-grow: 0; padding-top: 1px;" />
+            <ui:Button text="Play Main Game" display-tooltip-when-elided="true" class="buttonStyle" style="font-size: 31px; top: auto; bottom: auto;" />
+            <ui:Button text="Options" display-tooltip-when-elided="true" class="buttonStyle" style="position: relative; bottom: auto; top: auto; justify-content: flex-start;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
