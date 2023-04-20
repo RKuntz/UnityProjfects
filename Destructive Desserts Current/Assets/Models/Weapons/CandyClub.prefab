@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 605225181435479945}
   - component: {fileID: 4632770835412776524}
   - component: {fileID: 585835675854469124}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CandyClub
   m_TagString: Weapon
   m_Icon: {fileID: 0}
@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 6122889936320032448}
   - component: {fileID: 2805454471077181176}
   - component: {fileID: 6502764796449731907}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Icosphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -446,7 +446,7 @@ GameObject:
   - component: {fileID: 8188883395368188631}
   - component: {fileID: 7922853438186757460}
   - component: {fileID: 5891684302162479435}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
