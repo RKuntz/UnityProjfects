@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Weapon
   - Enemy
+  - MusicManager
   layers:
   - Default
   - TransparentFX

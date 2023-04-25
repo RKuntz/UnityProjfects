@@ -13,6 +13,7 @@ public class BackgroundMusicManager : MonoBehaviour
     void Start()
     {
         timer = TimerObject.GetComponent<Timer>();
+        musicShift(1);
     }
 
     // Update is called once per frame
