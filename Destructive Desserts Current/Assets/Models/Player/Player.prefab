@@ -756,7 +756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 8126117741928946503}
-  m_TurnSpeed: 60
+  m_TurnSpeed: 90
   m_LeftHandTurnAction:
     m_UseReference: 0
     m_Action:
@@ -794,7 +794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 8126117741928946503}
-  m_MoveSpeed: 5
+  m_MoveSpeed: 7
   m_EnableStrafe: 1
   m_EnableFly: 0
   m_UseGravity: 1
@@ -1129,7 +1129,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!143 &135668142720985940
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1143,7 +1143,7 @@ CharacterController:
   serializedVersion: 2
   m_Height: 2.49
   m_Radius: 0.26
-  m_SlopeLimit: 45
+  m_SlopeLimit: 15
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001

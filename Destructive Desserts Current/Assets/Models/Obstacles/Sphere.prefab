@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6183980621929360818}
   - component: {fileID: 8534050588726556441}
   - component: {fileID: 6234655360848840539}
-  - component: {fileID: 3336643738128315298}
   - component: {fileID: 5244356353706061709}
+  - component: {fileID: 8232423258313789737}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -85,19 +85,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &3336643738128315298
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2606221746162526136}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!208 &5244356353706061709
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -114,3 +101,17 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!136 &8232423258313789737
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2606221746162526136}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.54
+  m_Height: 6.057127
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.43301105, z: 0}

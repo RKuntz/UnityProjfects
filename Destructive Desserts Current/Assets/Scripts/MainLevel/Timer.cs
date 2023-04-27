@@ -10,6 +10,9 @@ public class Timer : MonoBehaviour
     public float timeLeft;
     public float timePassed;
     public bool timerRunning;
+    private bool gameEnd = false;
+    public GameObject player;
+    public GameObject teleportPos;
 
     public TextMeshPro timerText;
     // Start is called before the first frame update
@@ -36,7 +39,16 @@ public class Timer : MonoBehaviour
                 timerRunning = false;
             }
         }
+
+        if (!timerRunning && !gameEnd)
+        {
+            TeleportPlayer();
+            gameEnd = true;
+        }
+
+
     }
+
 
     void updateTimer(float currentTime)
     {
@@ -46,5 +58,10 @@ public class Timer : MonoBehaviour
         float seconds = Mathf.FloorToInt(currentTime % 60);
 
         timerText.text = string.Format("{0:00} : {1:00}", minutes, seconds);
+    }
+
+    void TeleportPlayer()
+    {
+        player.transform.position = teleportPos.transform.position;
     }
 }

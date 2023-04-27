@@ -21,7 +21,7 @@ public class EnemyRespawner : MonoBehaviour
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         if(enemies.Length <= 0)
         {
-            if (timer >= 3)
+            if (timer >= 1)
             {
                 for (int i = 0; i < spawnPos.Length; i++)
                 {

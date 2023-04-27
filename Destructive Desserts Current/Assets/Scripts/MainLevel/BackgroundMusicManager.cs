@@ -38,6 +38,11 @@ public class BackgroundMusicManager : MonoBehaviour
             intensity = 4;
         }
 
+        if(timer.timePassed >= 120 && intensity != 1)
+        {
+            musicShift(1);
+        }
+
     }
 
     private void musicShift(int intensity)

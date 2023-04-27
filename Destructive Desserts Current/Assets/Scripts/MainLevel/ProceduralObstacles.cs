@@ -15,6 +15,7 @@ public class ProceduralObstacles : MonoBehaviour
         for (int i = 0; i < smallSpawnPositions.Length; i++)
         {
             int chance = Random.Range(1, 3);
+            //int chance = 2;
             Debug.Log(chance);
             if (chance == 2)
             {
@@ -22,8 +23,8 @@ public class ProceduralObstacles : MonoBehaviour
             }
         }
 
-        //int largeObstacleChance = Random.Range(1, 4);
-        int largeObstacleChance = 3;
+        int largeObstacleChance = Random.Range(1, 4);
+        //int largeObstacleChance = 3;
         Debug.Log(largeObstacleChance);
         if (largeObstacleChance == 3)
         {

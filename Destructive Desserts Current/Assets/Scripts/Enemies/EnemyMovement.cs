@@ -38,6 +38,10 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        stunned = true;
+        if (collision.gameObject.tag == "Weapon")
+        {
+            stunned = true;
+            Debug.Log("Collision based stun.");
+        }
     }
 }

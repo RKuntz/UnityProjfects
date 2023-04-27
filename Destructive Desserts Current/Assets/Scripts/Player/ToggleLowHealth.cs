@@ -5,8 +5,8 @@ using UnityEngine;
 public class ToggleLowHealth : MonoBehaviour
 {
     private GameObject musicManager;
-    private IsRightHand hand;
     private LowHealthMusic lowHealth;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -15,22 +15,10 @@ public class ToggleLowHealth : MonoBehaviour
         {
             lowHealth = musicManager.GetComponent<LowHealthMusic>();
         }
-        else
-        {
-            enabled = false;
-        }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    public void ChangeHealth()
     {
-        hand = collision.gameObject.GetComponent<IsRightHand>();
-        if(hand != null)
-        {
-            lowHealth.playerHealthLow = true;
-        }
-        else
-        {
-            enabled = false;
-        }
+        lowHealth.playerHealthLow = !lowHealth.playerHealthLow;
     }
 }

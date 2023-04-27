@@ -9,14 +9,19 @@ public class FullEnemyCollision : MonoBehaviour
     private AudioSource weaponSound;
     public bool isDead = false;
     public Collider meshCollider;
+    public Rigidbody mainRigid;
     private float timer;
     private EnemyMovement movement;
+    private ScoreKeeper scoreKeeper;
     // Start is called before the first frame update
     void Start()
     {
+        scoreKeeper = GameObject.FindGameObjectWithTag("ScoreKeeper").GetComponent<ScoreKeeper>();
+
         setRigidBodyState(true);
         setColliderState(false);
         movement = gameObject.GetComponent<EnemyMovement>();
+
     }
 
     // Update is called once per frame
@@ -24,9 +29,8 @@ public class FullEnemyCollision : MonoBehaviour
     {
         if (isDead)
         {
-            die();
             timer += Time.deltaTime;
-            if(timer >= 3)
+            if (timer >= 1.5)
             {
                 Destroy(gameObject);
             }
@@ -70,6 +74,8 @@ public class FullEnemyCollision : MonoBehaviour
         isDead = true;
         movement.stunned = true;
 
+        scoreKeeper.UpdateScore();
+
     }
 
     void setRigidBodyState(bool state)
@@ -80,6 +86,7 @@ public class FullEnemyCollision : MonoBehaviour
         {
             rigidbody.isKinematic = state;
         }
+        mainRigid.isKinematic = !state;
     }
 
     void setColliderState(bool state)
