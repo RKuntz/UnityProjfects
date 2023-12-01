@@ -121,7 +121,9 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 6309398077586367965}
-  m_Enabled: 1
+    - renderer: {fileID: 1856219022625988213}
+    - renderer: {fileID: 415933003743396639}
+  m_Enabled: 0
 --- !u!23 &6309398077586367965 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -7918335002988649766, guid: 3957c159de661604f8ec2fc52be3ae46, type: 3}

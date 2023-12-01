@@ -124,11 +124,15 @@ LODGroup:
     - renderer: {fileID: 6476973875405451027}
     - renderer: {fileID: 5036705456711250553}
     - renderer: {fileID: 1706640159776593083}
+    - renderer: {fileID: 5315762614352963280}
   - screenRelativeHeight: 0.1
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 1706640159776593083}
-  m_Enabled: 1
+    - renderer: {fileID: 6476973875405451027}
+    - renderer: {fileID: 5036705456711250553}
+    - renderer: {fileID: 5315762614352963280}
+  m_Enabled: 0
 --- !u!23 &1706640159776593083 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -7918335002988649766, guid: c5e163f6c75c1234682fdcb6bb2d09dc, type: 3}
