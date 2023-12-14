@@ -5,10 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class NextScene : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collider)
+    /*private void OnCollisionEnter(Collision collider)
     {
         Debug.Log("Next Scene!");
         SceneManager.LoadScene("LevelOne");
 
+    }*/
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Next Scene!");
+        SceneManager.LoadScene("LevelOne");
     }
 }
